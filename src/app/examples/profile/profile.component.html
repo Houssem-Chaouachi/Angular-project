@@ -1,0 +1,177 @@
+<div class="wrapper">
+    <div class="page-header page-header-small" filter-color="orange"><br>
+        <div class="container">
+
+            <div class="content-center brand">
+                <img class="n-logo" src="assets/img/now-logo.png" alt="">
+                <h2 class="h2-seo">Repreneurs & Investisseurs inscrits sur notre site</h2>
+                <h3>Envoyez des propositions de reprise ou d'investissement dans votre entreprise aux Repreneurs &
+                    Investisseurs inscrits sur notre site . Céder son entreprise ou lever des fonds en toute
+                    confidentialité n'a jamais été aussi simple ...</h3>
+                <button class="btn btn-primary  my-2 my-sm-0" type="submit" [routerLink]="['/deposer-offre-entreprise']"><i
+                        class="material-icons text-orange pr-1 fs-1-5" >edit</i> Déposer une annonce</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <!-- <div class="button-container">
+                <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
+                <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip"
+                    title="Follow me on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip"
+                    title="Follow me on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div> -->
+            <h3 class="title">About me</h3>
+            <h5 class="description">An artist of considerable range, Ryan — the name taken by Melbourne-raised,
+                Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm,
+                intimate feel with a solid groove structure. An artist of considerable range.</h5>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="title text-center" style="border-style: solid;  color: orangered;">Les activités
+                        recherchées
+                    </h4>
+                    <ngb-tabset [justify]="'fill'" style="color: coral;" class="nav-pills-primary">
+                        <ngb-tab title="Entreprises et Commerces">
+
+                            <ng-template ngbTabContent>
+                                <div class="row">
+                                    <div class="col-md-10 ml-auto mr-auto">
+                                        <div class="row collections">
+                                            <div class="col-md-6" *ngFor="let t of table; let i= index">
+                                                                                        
+                                                <img src={{t.img}} alt="" class="img-raised"/>
+
+                                              
+                                                <h3 class="title"> Prix de vente: {{t.prix}} DT</h3>
+                                                <h5 class="description">{{t.detail}} <button class="btn btn-primary "
+                                                        type="submit">Envoyer une proposition</button></h5>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg8.jpg" alt="" class="img-raised">
+                                                <h3 class="title">Prix de vente : 645 000 €</h3>
+                                                <h5 class="description">An artist of considerable range, Ryan — the name
+                                                    taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
+                                                    performs and records all of his own music, giving it a warm,
+                                                    intimate feel with a solid groove structure. An artist of
+                                                    considerable range.<button class="btn btn-primary "
+                                                        type="submit">Envoyer une proposition</button></h5>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg1.jpg" alt="" class="img-raised">
+                                                <h3 class="title">Prix de vente : 645 000 €</h3>
+                                                <h5 class="description">An artist of considerable range, Ryan — the name
+                                                    taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
+                                                    performs and records all of his own music, giving it a warm,
+                                                    intimate feel with a solid groove structure. An artist of
+                                                    considerable range.<button class="btn btn-primary "
+                                                        type="submit">Envoyer une proposition</button></h5>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg1.jpg" alt="" class="img-raised">
+                                                <h3 class="title">Prix de vente : 645 000 €</h3>
+                                                <h5 class="description">An artist of considerable range, Ryan — the name
+                                                    taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
+                                                    performs and records all of his own music, giving it a warm,
+                                                    intimate feel with a solid groove structure. An artist of
+                                                    considerable range.<button class="btn btn-primary "
+                                                        type="submit">Envoyer une proposition</button></h5>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg1.jpg" alt="" class="img-raised">
+                                                <h3 class="title">Prix de vente : 645 000 €</h3>
+                                                <h5 class="description">An artist of considerable range, Ryan — the name
+                                                    taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
+                                                    performs and records all of his own music, giving it a warm,
+                                                    intimate feel with a solid groove structure. An artist of
+                                                    considerable range.<button class="btn btn-primary "
+                                                        type="submit">Envoyer une proposition</button></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="Locaux, Bureaux, Entrepôts, Terrains">
+
+                            <ng-template ngbTabContent>
+                                <div class="row">
+                                    <div class="col-md-10 ml-auto mr-auto">
+                                        <div class="row collections">
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg6.jpg" class="img-raised">
+                                                <img src="assets/img/bg11.jpg" alt="" class="img-raised">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg7.jpg" alt="" class="img-raised">
+                                                <img src="assets/img/bg8.jpg" alt="" class="img-raised">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="Opportunités pour Investisseurs
+                          Immobilières, Financières, Judiciaires">
+                            <ng-template ngbTabContent>
+                                <div class="row">
+                                    <div class="col-md-10 ml-auto mr-auto">
+                                        <div class="row collections">
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg3.jpg" alt="" class="img-raised">
+                                                <img src="assets/img/bg8.jpg" alt="" class="img-raised">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="assets/img/bg7.jpg" alt="" class="img-raised">
+                                                <img src="assets/img/bg6.jpg" class="img-raised">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                    </ngb-tabset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-default">
+        <!-- <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/about-us">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                            MIT License
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy;
+                {{data | date: 'yyyy'}}, Designed by
+                <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            </div>
+        </div> -->
+    </footer>
+</div>

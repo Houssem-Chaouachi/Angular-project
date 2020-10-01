@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <!-- CONTENT -->
+        <div class="col-md-9 content car-listing" id="content">
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="thumbnail no-border no-padding thumbnail-car-card clearfix">
+                        <div *ngFor="let c of container; let i=index">
+                            <div class="media">
+                                <a class="media-link" data-gal="prettyPhoto" href="#">
+                                    <img src={{c.img}} alt="" />
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="caption-title"><a href="#">{{c.nomEntreprise}}, {{c.localisation}},
+                                    </a></h4>
+                                <h5 class="caption-title-sub">{{c.prix}} TND</h5>
+                                <div class="caption-text">{{c.detail}}</div>
+                                <table class="table">
+                                    <tr>
+                                        <td>date de l'annonce (à ajouter)</td>
+                                        <td><i class="fa fa-map-marker-alt"></i> <br>{{c.localisation}} </td>
+                                        <td><i class="fa fa-cog"></i><br> {{c.secteur}}</td>
+                                        <td><i class="fa fa-money-bill"></i><br> {{c.prix}}</td>
+                                        <td class="buttons" [routerLink]="['/modifier-annonce-repreneurs', i]"><a
+                                                class="btn btn-warning"><i
+                                                    class="material-icons text-orange pr-1 fs-1-5">edit</i>Modifier
+                                                l'annonce</a></td>
+                                        <td class="buttons"><a class="btn btn-danger" (click)="delete(i)"> <i
+                                                    class="material-icons text-orange pr-1 fs-1-5">delete</i>Supprimer
+                                                l'annonce</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

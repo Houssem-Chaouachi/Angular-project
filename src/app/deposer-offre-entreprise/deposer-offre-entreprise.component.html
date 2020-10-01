@@ -1,0 +1,100 @@
+<div class="row">
+    <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2 class="title">Déposer une annoce de vente d'entreprise</h2>
+        <h5 class="description">Réseau social professionnel pour Vendre son entreprise, Reprendre une entreprise ou
+            Lever des fonds en Tunisie, Connectez-vous d’un clic avec des repreneurs, des cédants, des investisseurs et
+            des professionnels de la transmission d’entreprises en toute confidentialité</h5>
+    </div>
+</div>
+<div class="separator separator-primary"></div>
+<div class="section section-contact-us text-center">
+    <form [formGroup]="deposerAnnonce">
+           <div class="swiper swiper--offers-best">
+            <div class="row">
+                <div class="col-sm-6">
+                    <input formControlName="img" type="file" name="img" id="img">
+                </div>
+                <div class="col-md-3">
+                        <input formControlName="nomEntreprise" type="text" placeholder="Nom d'entreprise" />
+                    
+                    <div id="Car"></div>
+                </div>
+                <div class="col-md-3">
+                        <input formControlName="prix" type="number" placeholder="Prix en TND" id="Prix" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <select class="selectpicker input-price" formControlName="secteur" id='Modele'>
+                        <option value="Modele" style="background-color: rgb(255, 120, 24);" selected="1">Secteur
+                            d'activiter</option>
+                        <option value="Industrie">Industrie</option>
+                        <option value="Production et batimenet">Production et batimenet</option>
+                        <option value="Services">Services</option>
+                        <option value="Commerces">Commerces</option>
+                    </select>
+                </div>
+                <!-- <div class="col-md-3">
+                    <div class="form-group">
+                        <select class="selectpicker " id="engine">
+                            <option value="ENGINE" style="background-color: rgb(255, 120, 24);" selected="1">Type
+                                d'offre</option>
+                            <option value="Diesel">Vente</option>
+                            <option value="Essence">Location</option>
+                        </select>
+                    </div>
+                    <div id="energie"></div>
+                </div> -->
+                <!-- <div class="col-md-3">
+                <div class="form-group">
+                    <select class="selectpicker input-price" id="boite">
+                        <option value="boite" selected="1">boite</option>
+                        <option value="AUTO">AUTO</option>
+                        <option value="MANUEL">MANUEL</option>
+                    </select>
+                </div>
+                <div id="boite1"></div>
+            </div> -->
+                <div class="col-md-3">
+                    <div class="form-group has-icon has-label">
+
+                        <select class="selectpicker input-price" formControlName="localisation">
+                            <option value="tout" style="background-color: rgb(255, 120, 24);" selected="1">Localisation
+                            </option>
+                            <option value="Tunis">Tunis
+                            </option>
+                            <option value="Ariana">Ariana
+                            </option>
+                            <option value="Ben Arous">Ben
+                                Arous</option>
+                            <option value="Manouba">Manouba
+                            </option>
+                            <option value="Nabeul">Nabeul
+                            </option>
+                            <option value="Bizert">Bizert
+                            </option>
+                            <option value="Sousse">Sousse
+                            </option>
+                            <option value="Monastir">
+                                Monastir</option>
+                            <option value="Sfax">Sfax
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                        <input formControlName="detail" style="margin-left: 30px;" type="text" placeholder="détail" id="détait" />
+                </div>
+                <a  (click)="ADD()" type="buttons" id="formSearchSubmit" class="btn btn-primary btn-theme pull-right"
+                    style="margin-top: 30px;margin-left: 150px;">
+                    Déposer l'annonce</a>
+            </div>
+
+        </div>
+    </form>
+</div>
+<app-annonce-repreneurs-list></app-annonce-repreneurs-list>

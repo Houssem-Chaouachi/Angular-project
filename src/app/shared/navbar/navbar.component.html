@@ -1,0 +1,234 @@
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="500">
+
+  <div class="container">
+    <div id="logo" href="#">
+   <a href=""> <img class="n-logo" src="assets/img/now-logo.png"  alt=""></a>
+  </div>
+  
+    <div class="dropdown button-dropdown">
+      <div ngbDropdown>
+        <a class="dropdown-toggle" ngbDropdownToggle>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+        </a>
+        <div ngbDropdownMenu>
+          <a class="dropdown-item" href="#">A propos de nous</a>
+          <a class="dropdown-item" href="#">Nous contacter</a>
+          <a class="dropdown-item" href="#">Nous rejoindre</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Espace presse & partenariats</a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-translate">
+      <a class="navbar-brand" routerLink="examples/landing" placement="bottom">
+        Qui sommes-nous ?
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="sidebarToggle()">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <div class="dropdown button-dropdown">
+      <div ngbDropdown>
+        <a class="dropdown-toggle" ngbDropdownToggle>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+        </a>
+        <div ngbDropdownMenu>
+          <a class="dropdown-item" href="#">Déposer une annonce</a>
+          <a class="dropdown-item" href="#">Consulter les Entreprises (ou affaires) demandées</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Accompagnement</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Valorisation d'entreprise</a>
+          <a class="dropdown-item" href="#">Levée des fonds</a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-translate">
+      <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Entreprises à vendre">
+        Promoteurs
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="sidebarToggle()">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <div class="dropdown button-dropdown">
+      <div ngbDropdown>
+        <a class="dropdown-toggle" ngbDropdownToggle>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+        </a>
+        <div ngbDropdownMenu>
+          <a class="dropdown-item" href="#">Déposer une annonce</a>
+          <a class="dropdown-item" href="#">Consulter les Entreprises (ou affaires) à vendre</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Levée des fonds </a>
+          <a class="dropdown-item" href="#">Accompagnement</a>
+          <a class="dropdown-item" href="#">Formation à la reprise d'entreprise</a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-translate">
+      <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Entreprises demandées">
+        Repreneurs & Investisseurs
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="sidebarToggle()">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <!-- <div class="dropdown button-dropdown">
+      <div ngbDropdown>
+        <a class="dropdown-toggle" ngbDropdownToggle>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+        </a>
+        <div ngbDropdownMenu>
+          <a class="dropdown-item" href="#">Comment céder son entreprise ou son fonds de commerce ?</a>
+          <a class="dropdown-item" href="#">Comment trouver une entreprise à reprendre ?</a>
+          <a class="dropdown-item" href="#">Comment lever des fonds ?</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Comment investir dans une entreprise ?</a>
+          <a class="dropdown-item" href="#">Comment évaluer une entreprise ?</a>
+          <a class="dropdown-item" href="#">Comment évaluer un fonds de commerce ?</a>
+          <a class="dropdown-item" href="#">Comment s’inscrire en tant que professionnel de la transmission ?</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Comment bien rédiger son profil ?</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="navbar-translate">
+      <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Entreprises demandées">
+        Fonctionnement
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="sidebarToggle()">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div> -->
+    <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
+            href="https://www.facebook.com/CreativeTim" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+            <p class="d-lg-none d-xl-none">Facebook</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Follow us on Linkedin" data-placement="bottom"
+            href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <p class="d-lg-none d-xl-none">Linkedin</p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary  my-2 my-sm-0" data-toggle="modal"
+      data-target="#exampleModal,#exampleModal1" data-whatever="@getbootstrap">Login</button>
+
+  </div><br>
+
+</nav>
+
+<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mot de Passe</label>
+            <input type="password" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">S'identifier</button>
+
+        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal1" data-whatever="@getbootstrap">New
+          around here? Sign up</a>
+        <a class="dropdown-item" href="#">Mot de passe oublier ?</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="modal fade " id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel1">Inscription</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input type="text" placeholder="Saisissez votre email" class="form-control" id="recipient-name1">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mot de Passe</label>
+            <input type="password" placeholder="Mot de passe" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Confirmez votre mot de passe </label>
+            <input type="password" placeholder="Confirmez votre mot de passe" class="form-control">
+          </div>
+          <div class="custom-checkbox"><label><input name="policyTerms" required="" type="checkbox"
+                class="ng-untouched ng-pristine ng-invalid"><span></span> Je reconnais avoir lu et accepté les
+              <a target="_blank" href="/corp/conditions-generales-cgu-cgv">conditions générales</a> de
+              l'entreprise</label>
+            <!---->
+          </div>
+        </form>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">S'inscrire</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
