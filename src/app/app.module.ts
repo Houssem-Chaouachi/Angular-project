@@ -26,7 +26,6 @@ import { AnnonceRepreneursListComponent } from './annonce-repreneurs-list/annonc
     imports: [
         BrowserAnimationsModule,
         NgbModule,
-        FormsModule,
         RouterModule,
         AppRoutingModule,
         ComponentsModule,

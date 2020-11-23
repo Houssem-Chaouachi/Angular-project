@@ -7,7 +7,7 @@ import { ListOffreService } from 'app/Services/list-offre.service';
   styleUrls: ['./annonce-repreneurs-list.component.css']
 })
 export class AnnonceRepreneursListComponent implements OnInit {
-container: any;
+container: [];
 index: number
   constructor( private service: ListOffreService) { }
 

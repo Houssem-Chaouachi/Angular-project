@@ -30,7 +30,6 @@ export class DeposerOffreEntrepriseComponent implements OnInit {
   }
   ADD() {
 this.service.add(this.deposerAnnonce.value);
-
   }
 
 }
