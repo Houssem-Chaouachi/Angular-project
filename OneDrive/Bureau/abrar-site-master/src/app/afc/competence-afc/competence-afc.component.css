@@ -1,0 +1,36 @@
+
+.background-img-finance{
+    background:url('../../../assets/assets/img/portfolio/coworkers-team-brainstorming.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    
+}
+.fa-check:hover {
+color: rgb(17, 156, 128);
+cursor: pointer;
+text-decoration: underline;
+}
+.element-style-competence {
+
+    border-width: 4px 0 0 0;
+    border-color: #c4c3c2;
+    margin: 4% 2% 2% 1%;
+    height: 265px;
+    width: 350px;
+  
+}
+      
+.element-style-competence p {
+    text-align: justify;
+    margin-top: 3px;
+}
+.element-style-competence:hover{
+    border-color:#d3b574
+};
+
+
+.p-inherit{
+    padding: inherit
+};
+

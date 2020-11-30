@@ -1,0 +1,24 @@
+
+    <nav class="navbar navbar-expand-lg nav-bg-secondary navbar-transparant fixed-top activate.bs.scrollspy" id="mainNav">
+        <div id="top-page" class=" container"><a class="navbar-brand js-scroll-trigger"
+                (click)="toTopPage()" ><img routerLink='' src="../../assets/assets/img/portfolio/ABC_LOGO.png" alt="AbrarCom"></a>
+            <a class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class=" navbar-nav mat-item-typography ml-auto">
+                    <li class="nav-item mx-0  mx-lg-1" routerLinkActive="active" (click)="toCompanies()"><a
+                            class="nav-link nav-item-style py-3 px-0 px-lg-3js-scroll-trigger">Our companies</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1" routerLinkActive="active" (click)="toReferences()"><a
+                            class="nav-link nav-item-style py-3 px-0 px-lg-3  js-scroll-trigger">Our references</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1 " routerLinkActive="active" (click)="toContactUs()"><a
+                            class="nav-link nav-item-style py-3 px-0 px-lg-3  js-scroll-trigger">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <div class="scroll-to-top  position-fixed"(click)="scrollTop()" routerLinkActive="active"><a class="js-scroll-trigger d-block text-center text-white rounded" 
+        ><i class="fa fa-chevron-up"></i></a></div>

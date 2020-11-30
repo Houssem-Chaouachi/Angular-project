@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "cli": {
+    "analytics": "1d803511-8737-48c9-9c5c-0aeff4bd74c1",
+    "warnings": {
+      "versionMismatch": false
+    }
+  }
+}

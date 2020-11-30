@@ -1,0 +1,49 @@
+.img-size {
+    max-width: 170px;
+    max-height: 101px;
+}
+
+.bg-AbrarCover {
+    /* background:url(../../assets/assets/img/portfolio/AbrarCover.jpg); */
+padding: initial;
+    background-size: cover;
+    max-height: 45rem;
+    width: 100%;
+    
+}
+.font{
+    font:413 30px/28px Roboto, "Helvetica Neue", sans-serif;
+}
+.padding-1{
+    padding: 40px!important;
+}
+.carousel-item-postion {
+    position: relative;
+    bottom: 300px;
+   
+}
+.carousel-item-postion h2 {
+    font-size: 3rem;
+
+}
+
+.caroussel-style {
+    z-index: 1;
+}
+.carousel-item {
+    /* Force to always be block */
+    display: block !important;
+    z-index: 1;
+    position: absolute;
+    transform: translateX(100%);
+    opacity: 0;
+    transition:all  0.2s;
+    visibility: hidden;
+  }
+  
+  .carousel-item.active {
+    position: relative;
+    transform: translateX(0);
+    visibility: visible ;
+    opacity: 1;
+  }

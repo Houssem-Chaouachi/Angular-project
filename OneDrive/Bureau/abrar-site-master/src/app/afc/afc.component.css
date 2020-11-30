@@ -1,0 +1,48 @@
+
+.background {
+    background:url('../../assets/assets/img/portfolio/bts-comptabilite-finance-1920x1080.jpg');
+    background-attachment: fixed;
+}
+.layer {
+    background-color: rgba(17, 156, 128, 0.5);
+    position: relative;
+    top: 0px;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+}
+.logo-style{
+    width: 140px;
+    border-radius: 8px;
+    background-color:rgb(255, 255, 255)
+}
+
+
+.circle-style {
+    height: 124px;
+    width: 124px;
+    border-radius:50%;
+    display:inline-table;
+    
+}
+.element-style-expertise {
+    border-width: 0 0 0 4px;
+    border-color: #d3b574;
+    margin: -4% 2% 2% 1%;
+    height: 160px;
+    width: 280px;
+}
+.background-expertise {
+    background:url('../../assets/assets/img/portfolio/financement.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-expertise{
+    padding: initial;
+    padding-bottom: 65px;
+}
+.icon-size{
+    font-size: 60px;
+    margin-top: 26px;
+    color: rgb(255, 255, 255);
+}
